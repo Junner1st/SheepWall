@@ -1,5 +1,6 @@
 services:
   mitmproxy:
+    container_name: sheep_wall
     image: mitmproxy/mitmproxy
     command: su -c "python /usr/local/bin/mitmweb --set confdir=/config"
     privileged: true
